@@ -7,5 +7,7 @@ RUN pip install numpy cython scipy matplotlib h5py nibabel
 RUN pip install cvxpy scikit-learn
 RUN pip install dipy
 
+ENV PYTHONPATH /usr/local/lib/python2.7/dist-packages
+
 RUN ldconfig
 
